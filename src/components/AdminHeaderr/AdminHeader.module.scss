@@ -1,0 +1,53 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0px;
+    height: 70px;
+    background-color: #000000;
+    z-index: 99;
+}
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 100%;
+    background-color: #110423;
+}
+.content {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+}
+.back {
+    display: flex;
+    align-items: center;
+    margin-right: 86px;
+    cursor: pointer;
+}
+.icon-back {
+    margin-right: 6px;
+}
+.admin {
+    display: flex;
+    align-items: center;
+}
+.avata {
+    margin-right: 6px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}

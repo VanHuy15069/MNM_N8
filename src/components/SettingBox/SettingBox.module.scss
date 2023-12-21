@@ -1,0 +1,36 @@
+.wrapper {
+    background-color: #34224f;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    width: 240px;
+    z-index: 101;
+}
+.menu-item {
+    border-radius: 4px;
+    color: #dadada;
+    height: 44px;
+    line-height: normal;
+    font-size: 1.4rem;
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:hover {
+        background-color: #493961;
+    }
+}
+.item-right {
+    display: flex;
+    align-items: center;
+}
+.icon-1 {
+    margin-right: 12px;
+    font-size: 2rem;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    max-width: 10px 12px;
+}

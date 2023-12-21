@@ -1,0 +1,219 @@
+.container {
+    display: flex;
+    padding-top: 40px;
+}
+.music-single {
+    position: sticky;
+    top: 110px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    &.active .overlay {
+        display: flex;
+    }
+    &:hover img {
+        transform: scale(1.1);
+    }
+    &:hover .overlay {
+        display: flex;
+    }
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: transform ease-out 0.5s;
+    }
+}
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+}
+.pause {
+    margin: auto;
+    font-size: 4.5rem;
+}
+.play {
+    margin: auto;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.content {
+    text-align: center;
+    margin-top: 12px;
+}
+.info {
+    user-select: none;
+}
+.music-name {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.75;
+    text-transform: capitalize;
+}
+.singer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.singer-name {
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 1.2rem;
+    line-height: 1.75;
+    cursor: pointer;
+    width: fit-content;
+    &:hover {
+        text-decoration: underline;
+        color: #c273ed;
+    }
+}
+.count-favorite {
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 1.2rem;
+    line-height: 1.75;
+}
+.button {
+    margin: 16px 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9b4de0;
+    border-radius: 999px;
+    border: none;
+    color: #fff;
+    padding: 9px 24px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.icon {
+    margin-right: 5px;
+}
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap-icon {
+    height: 35px;
+    width: 35px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    cursor: pointer;
+    & .heart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        &.added {
+            color: #9b4de0;
+        }
+    }
+}
+.msg {
+    position: fixed;
+    bottom: 90px;
+    left: 0;
+    animation: active ease-out 0.5s;
+    z-index: 999;
+}
+@keyframes active {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.header-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.5);
+    padding: 0 10px 10px 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.05);
+}
+.list-music {
+    flex: 1;
+    margin-left: 30px;
+}
+.listOfSinger {
+    margin-top: 48px;
+}
+.title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -14px;
+}
+.item {
+    padding: 0 14px;
+    width: 20%;
+}
+@media (max-width: 1231px) {
+    .container {
+        display: block;
+    }
+    .music-single {
+        height: 200px;
+        width: 100%;
+        flex-direction: row;
+    }
+    .image {
+        width: 200px;
+        height: 100%;
+        margin-right: 20px;
+    }
+    .content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        margin-top: 0;
+    }
+    .button {
+        margin-right: 10px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .wrap-btn {
+        display: flex;
+    }
+    .list-music {
+        margin-left: 0;
+    }
+    .item {
+        width: 25%;
+    }
+}

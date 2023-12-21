@@ -1,0 +1,136 @@
+.slider {
+    padding-top: 32px;
+}
+
+.img-slider {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.top-music {
+    margin-top: 48px;
+}
+.title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+.btn {
+    padding: 4px 18px;
+    border: 1px solid hsla(0, 0%, 100%, 0.1);
+    border-radius: 100px;
+    width: 100px;
+    margin-right: 15px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all ease-out 0.3s;
+    cursor: pointer;
+    &.active {
+        background-color: #c273ed;
+        font-weight: 500;
+    }
+}
+.navigation {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: hsla(0, 0%, 100%, 0.5);
+    cursor: pointer;
+    &:hover {
+        color: #c273ed;
+    }
+}
+.icon {
+    font-size: 1.6rem;
+    margin-left: 6px;
+}
+.list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -14px;
+}
+.item {
+    padding: 0 14px;
+    width: calc(100% / 3);
+}
+.singer {
+    margin-top: 48px;
+}
+.list-singer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -14px;
+}
+.rank {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    margin: 28px -14px 0;
+}
+.rank-item {
+    padding: 0 14px;
+}
+.rank-img {
+    overflow: hidden;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+.image-rank {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform ease-out 0.5s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.top100 {
+    margin-top: 48px;
+    margin-bottom: 30px;
+}
+.header-top100 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.msg {
+    position: fixed;
+    bottom: 90px;
+    left: 0;
+    animation: active ease-out 0.5s;
+    z-index: 999;
+}
+@keyframes active {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@media (max-width: 1131px) {
+    .item {
+        width: 50%;
+    }
+}

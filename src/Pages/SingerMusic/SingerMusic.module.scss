@@ -1,0 +1,77 @@
+.title {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.singer {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.sort {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 999px;
+    font-size: 1.4rem;
+    user-select: none;
+    cursor: pointer;
+    & p {
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+}
+.box {
+    position: absolute;
+    padding: 5px;
+    font-size: 1.2rem;
+    background-color: #34224f;
+    top: calc(100% + 8px);
+    width: 100%;
+    border-radius: 8px;
+    &::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid #34224f;
+        position: absolute;
+        left: 15px;
+        top: -8px;
+    }
+}
+.item {
+    padding: 10px;
+    border-radius: 4px;
+    &:hover {
+        background-color: hsla(0, 0%, 100%, 0.1);
+    }
+}
+.header {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 46px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: hsla(0, 0%, 100%, 0.5);
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.05);
+    user-select: none;
+    & p:first-child {
+        flex: 6;
+    }
+    & p:nth-child(2) {
+        flex: 2;
+    }
+    & p:last-child {
+        flex: 2;
+        text-align: right;
+    }
+}

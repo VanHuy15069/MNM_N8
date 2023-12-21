@@ -1,0 +1,29 @@
+.wrapper {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    padding: 13px 10px;
+    background-color: #34224f;
+}
+.box:first-child {
+    padding-bottom: 8px;
+}
+.line {
+    border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+.box:last-child {
+    padding-top: 8px;
+}
+.title {
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 0 10px 8px;
+}
+.item-search {
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+        background-color: hsla(0, 0%, 100%, 0.1);
+    }
+}

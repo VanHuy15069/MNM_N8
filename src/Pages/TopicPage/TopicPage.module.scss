@@ -1,0 +1,47 @@
+.banner {
+    margin: 0 -59px;
+    padding-top: 30%;
+    position: relative;
+    & img {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.container {
+    margin-bottom: 20px;
+}
+.list {
+    margin-top: 48px;
+}
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.hot-songs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -14px;
+}
+.item {
+    width: calc(100% / 3);
+    padding: 0 14px;
+}
+.item-singer {
+    width: 20%;
+    padding: 0 14px;
+}
+@media (max-width: 1231px) {
+    .item {
+        width: 50%;
+    }
+}
+@media (max-width: 1231px) {
+    .item-singer {
+        width: 25%;
+    }
+}

@@ -1,0 +1,57 @@
+.wrap-logo {
+    padding-left: 28px;
+    padding-right: 25px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 120px;
+    height: 40px;
+    background: url(https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg) 50% / contain
+        no-repeat;
+}
+.active .menu-item {
+    color: var(--textColor);
+    background-color: #393142;
+}
+.menu-item {
+    color: #dadada;
+    font-size: 1.4rem;
+    padding: 12px 21px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+        color: var(--textColor);
+        background-color: #393142;
+    }
+}
+.icon {
+    margin-right: 12px;
+    font-size: 2.05rem;
+}
+.btn {
+    text-align: center;
+    padding: 12px 21px;
+}
+.btn-login {
+    width: 100%;
+    height: 36px;
+    border-radius: 20px;
+    background-color: #9b4de0;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media (max-width: 1131px) {
+    .logo {
+        background-image: url(https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.9.63/static/media/icon_zing_mp3_60.f6b51045.svg);
+    }
+    .text {
+        display: none;
+    }
+}

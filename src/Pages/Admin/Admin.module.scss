@@ -1,0 +1,127 @@
+.list-cart {
+    padding-top: 40px;
+    display: flex;
+    margin: 0 -14px;
+}
+.item {
+    width: 50%;
+    padding: 0 14px;
+}
+.cart {
+    text-transform: capitalize;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(59, 59, 235);
+    border-radius: 6px;
+    &.red {
+        background-color: rgb(237, 53, 53);
+    }
+    &.green {
+        background-color: rgb(39, 203, 39);
+    }
+}
+.chart {
+    margin-top: 48px;
+}
+.title {
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.input {
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+    width: 200px;
+    padding: 2px 4px;
+    font-size: 1.6rem;
+    outline: none;
+    caret-color: #fff;
+    background-color: #34224f;
+    &:focus {
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+    }
+    & option {
+        background-color: #34224f;
+    }
+}
+.container {
+    margin-top: 48px;
+    display: flex;
+}
+.top-music {
+    margin-left: 18px;
+    flex: 1;
+    & h3 {
+        padding-bottom: 10px;
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.05);
+    }
+}
+.info {
+    display: flex;
+    align-items: center;
+}
+.song-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+.music-name {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.pie-chart {
+    width: 500px;
+}
+.header {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header-item {
+    padding: 6px 12px;
+    cursor: pointer;
+    &.active {
+        border-bottom: 2px solid #8b45ca;
+        color: #8b45ca;
+    }
+}
+.music-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.05);
+}
+.action {
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: space-between;
+    width: 120px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    margin: 0 12px;
+    &.views {
+        margin-left: 0;
+    }
+    & p {
+        margin-left: 6px;
+        font-size: 1.2rem;
+    }
+}

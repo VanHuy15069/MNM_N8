@@ -1,0 +1,93 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../Images/hinh-nen-lol-yasumo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box {
+    padding: 12px 24px;
+    margin: auto;
+    width: 400px;
+    background-color: rgba($color: #000, $alpha: 0.4);
+    border-radius: 6px;
+    box-shadow: 0 0 10px 8px rgba($color: #000, $alpha: 0.1);
+}
+.wrapper-input {
+    width: 100%;
+    padding: 4px 0;
+}
+.title {
+    text-align: center;
+    font-weight: 700;
+}
+.input {
+    width: 100%;
+    padding-top: 12px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+    caret-color: #fff;
+    outline: none;
+    &::placeholder {
+        color: #fff;
+    }
+}
+.text {
+    text-align: right;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #fff;
+}
+.btn-login {
+    width: 100%;
+    text-align: center;
+}
+.btn {
+    width: 50%;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #9b4de0;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    margin-top: 12px;
+}
+.back {
+    position: absolute;
+    cursor: pointer;
+    font-size: 2.1rem;
+    color: #d0d0d0;
+    top: 20px;
+    left: 20px;
+}
+.check {
+    text-align: center;
+    font-size: 1.2rem;
+    color: red;
+    margin-top: 4px;
+}
+.msg {
+    position: fixed;
+    top: 10px;
+    right: 0;
+    animation: active ease-out 0.5s;
+}
+@keyframes active {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@media (max-width: 739px) {
+    .box {
+        width: calc(100vw - 10%);
+    }
+}

@@ -1,0 +1,101 @@
+.wrapper {
+    padding-top: 40px;
+}
+.title {
+    font-weight: 700;
+    font-size: 4rem;
+}
+.container {
+    margin-top: 32px;
+}
+.list-singer {
+    display: flex;
+    margin: 0 -14px;
+}
+.singer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 6);
+    padding: 0 14px;
+    &:last-child {
+        &:hover {
+            color: #c273ed;
+        }
+    }
+}
+.box {
+    padding-top: 100%;
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid hsla(0, 0%, 100%, 0.1);
+    cursor: pointer;
+}
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+}
+.img {
+    padding-top: 100%;
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    & img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+.singer-name {
+    width: fit-content;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    text-transform: none;
+    cursor: pointer;
+    &:hover {
+        color: #c273ed;
+        text-decoration: underline;
+    }
+    &.all:hover {
+        text-decoration: none;
+    }
+}
+.music-favorite {
+    margin-top: 48px;
+    margin-bottom: 80px;
+}
+.header {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 46px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: hsla(0, 0%, 100%, 0.5);
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.05);
+    user-select: none;
+}
+@media (max-width: 1231px) {
+    .singer-item {
+        width: 20%;
+    }
+}

@@ -1,0 +1,49 @@
+.wrapper {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    cursor: auto;
+}
+.box {
+    position: relative;
+    border-radius: 8px;
+    margin: auto;
+    background-color: #34224f;
+}
+.icon {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    cursor: pointer;
+}
+.content {
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+    user-select: none;
+}
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.msg {
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 1.4rem;
+}
+.button {
+    margin-top: 25px;
+    padding: 8px 25px;
+    background-color: #f8e71c;
+    color: #32323d;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 999px;
+    cursor: pointer;
+}

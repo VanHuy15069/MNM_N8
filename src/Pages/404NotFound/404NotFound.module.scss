@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex;
+    background-color: var(--primary);
+    height: 100vh;
+    width: 100vw;
+}
+.err {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h1 {
+        font-size: 12rem;
+        background: -webkit-linear-gradient(#ff009d, #000000);
+        background-clip: text;
+        color: transparent;
+    }
+    & p {
+        font-size: 4rem;
+        background: linear-gradient(to right, #4000ff, #ba0082);
+        background-clip: text;
+        color: transparent;
+    }
+}

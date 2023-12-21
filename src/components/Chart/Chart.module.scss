@@ -1,0 +1,29 @@
+.custom-tooltip {
+    background-color: #8b45ca;
+    padding: 10px;
+    border-radius: 4px;
+}
+.title {
+    display: flex;
+    align-items: center;
+}
+.img {
+    margin-right: 6px;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.singer {
+    font-size: 1.2rem;
+}
+.music {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.4rem;
+}

@@ -1,0 +1,111 @@
+.wrapper {
+    width: 350px;
+    background-color: #34224f;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    z-index: 101;
+}
+.user-wrapper {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.avata {
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 50%;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+    }
+}
+.info {
+    flex: 1;
+    margin-left: 12px;
+}
+.user-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.icon-vip {
+    color: yellow;
+    margin-left: 6px;
+}
+.box {
+    font-size: 1.2rem;
+    padding: 0 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    background-color: #e5ac1a;
+    width: fit-content;
+    color: #fff;
+    text-transform: uppercase;
+    &.basic {
+        color: #fff;
+        background-color: rgb(161, 161, 161);
+    }
+}
+.upgrate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 32px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    padding: 6px 0;
+    font-weight: 500;
+    border-radius: 22px;
+}
+.line {
+    height: 1px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    width: calc(100% - 24px);
+    margin: 10px auto;
+}
+.title {
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+}
+.menu-item {
+    border-radius: 4px;
+    padding: 12px 10px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    &:hover {
+        background-color: #493961;
+    }
+}
+.icon {
+    margin-right: 12px;
+    font-size: 2rem;
+}
+.msg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    animation: active ease-out 0.5s;
+    z-index: 999;
+}
+@keyframes active {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

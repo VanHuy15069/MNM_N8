@@ -1,0 +1,115 @@
+.wrap-music {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgba(254, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    &:hover .action {
+        display: flex;
+    }
+    &:hover .overlay {
+        display: flex;
+    }
+    &.active .overlay {
+        display: flex;
+    }
+}
+.img {
+    position: relative;
+    height: 84px;
+    width: 84px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 16px;
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    display: none;
+    & .pause {
+        margin: auto;
+        font-size: 2.4rem;
+    }
+    & .play {
+        height: 40px;
+        width: 40px;
+        margin: auto;
+    }
+}
+.info {
+    overflow-x: hidden;
+    flex: 1 1;
+    white-space: nowrap;
+}
+.music-title {
+    font-size: 1.2rem;
+    line-height: 18px;
+    margin-bottom: 6px;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+.music-name {
+    line-height: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.singer-name {
+    width: fit-content;
+    line-height: 18px;
+    font-size: 1.2rem;
+    color: hsla(0, 0%, 100%, 0.5);
+    &:hover {
+        text-decoration: underline;
+        color: #c273ed;
+    }
+}
+.action {
+    flex: 1;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+.action-icon {
+    height: 38px;
+    width: 38px;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+    border-radius: 50%;
+    overflow: hidden;
+    &:hover {
+        background-color: hsla(0, 0%, 100%, 0.1);
+    }
+}
+.added {
+    color: #c273ed;
+}
+.msg {
+    position: fixed;
+    bottom: 90px;
+    left: 0;
+    animation: active ease-out 0.5s;
+    z-index: 999;
+}
+@keyframes active {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
