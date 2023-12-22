@@ -12,7 +12,7 @@ const music = [
         vip: false,
         singerId: 1,
         singerName: 'Suni Hạ Linh',
-        singerImage: require('../Images/e5132977d0df155b73a7637283fb1499.jpg'),
+        singerImage: require('../Images/sunihalinh.jpg'),
         follow: 1289,
         description: 'Không biết mô tả gì',
     },
@@ -29,7 +29,7 @@ const music = [
         vip: false,
         singerId: 2,
         singerName: 'Sơn Tùng M-TP',
-        singerImage: require('../Images/fbf16d7352a3eea6be8cf5d4b217516d.jpg'),
+        singerImage: require('../Images/sontung.jpg'),
         follow: 9080,
         description:
             'Nguyễn Thanh Tùng (sinh ngày 5 tháng 7 năm 1994), thường được biết đến với nghệ danh Sơn Tùng M-TP, là một nam ca sĩ kiêm sáng tác nhạc, rapper và diễn viên người Việt Nam.',
@@ -47,9 +47,10 @@ const music = [
         vip: false,
         singerId: 3,
         singerName: 'Đen Vâu',
-        singerImage: require('../Images/4d347aacb2be84d868dd6d25bb4aa503.jpg'),
+        singerImage: require('../Images/denvau.jpg'),
         follow: 7880,
-        description: 'Không biết mô tả gì',
+        description:
+            'Nguyễn Đức Cường (sinh ngày 13 tháng 5 năm 1989), thường được biết đến với nghệ danh Đen hay Đen Vâu, là một nam rapper, nhạc sĩ và người dẫn chương trình người Việt Nam. Đen Vâu từng giành được giải Cống hiến và là "một trong số ít nghệ sĩ thành công từ làn sóng underground và âm nhạc indie" của Việt Nam. Anh sở hữu những bài hát đạt hàng triệu lượt xem trên YouTube và là chủ nhân của một số giải thưởng âm nhạc.',
     },
     {
         id: 4,
@@ -64,9 +65,10 @@ const music = [
         vip: false,
         singerId: 4,
         singerName: 'Quân A.P',
-        singerImage: require('../Images/65c36b8d4965ed39880d480df406408b.jpg'),
+        singerImage: require('../Images/quanap.jpg'),
         follow: 2204,
-        description: 'Không biết mô tả gì',
+        description:
+            'Quân A.P theo học trường Văn Hóa Nghệ Thuật Quân Đội và hát lại những ca khúc nổi tiếng trên mạng xã hội như "Màu Nước Mắt", "Đừng Ai Nhắc Về Cô Ấy", "Chiều Hôm Ấy"... Anh được người hâm mộ ưu ái gọi là "Hotboy cover".',
     },
     {
         id: 5,
@@ -83,7 +85,8 @@ const music = [
         singerName: 'Đạtkaa',
         singerImage: require('../Images/0cf36f4536237f8efb0b25a83301200b.jpg'),
         follow: 6790,
-        description: 'Không biết mô tả gì',
+        description:
+            'Là ca sĩ đang rất được giới trẻ, đặc biệt là gen Z yêu thích với những ca khúc như "Dừng Thương", "Hạ Còn Vương Nắng"...',
     },
     {
         id: 6,
@@ -98,9 +101,10 @@ const music = [
         vip: false,
         singerId: 3,
         singerName: 'Đen Vâu',
-        singerImage: require('../Images/4d347aacb2be84d868dd6d25bb4aa503.jpg'),
+        singerImage: require('../Images/denvau.jpg'),
         follow: 7880,
-        description: 'Không biết mô tả gì',
+        description:
+            'Nguyễn Đức Cường (sinh ngày 13 tháng 5 năm 1989), thường được biết đến với nghệ danh Đen hay Đen Vâu, là một nam rapper, nhạc sĩ và người dẫn chương trình người Việt Nam. Đen Vâu từng giành được giải Cống hiến và là "một trong số ít nghệ sĩ thành công từ làn sóng underground và âm nhạc indie" của Việt Nam. Anh sở hữu những bài hát đạt hàng triệu lượt xem trên YouTube và là chủ nhân của một số giải thưởng âm nhạc.',
     },
     {
         id: 7,
@@ -117,12 +121,13 @@ const music = [
         singerName: 'Max Elto',
         singerImage: require('../Images/tx.jpg'),
         follow: 5406,
-        description: 'Không biết mô tả gì',
+        description:
+            'Max Elto, trước đây gọi là Taped Rai, là một bộ đôi ca sĩ người CupiThụy Điển gồm Tom Liljegren và Alexander Ryberg. Họ được biết đến nhiều nhất khi góp giọng cho đĩa đơn "Just One Last Time" của David Guetta và phát hành đĩa đơn đầu tay "Shadow of the Sun" năm 2013.',
     },
     {
         id: 8,
         musicName: 'Cupid',
-        image: require('../Images/maxresdefault (2).jpg'),
+        image: require('../Images/613rUBFQ4zL._UF1000,1000_QL80_.jpg'),
         view: 5717,
         favorite: 2487,
         link: require('../songs/FIFTYFIFTY.mp3'),
@@ -134,7 +139,8 @@ const music = [
         singerName: 'FIFTY FIFTY',
         singerImage: require('../Images/ftft.png'),
         follow: 3271,
-        description: 'Không biết mô tả gì',
+        description:
+            'Fifty Fifty (tiếng Hàn: 피프티 피프티; RR: Pipeuti Pipeuti) là một nhóm nhạc nữ của Hàn Quốc được thành lập vào năm 2022 bao gồm 4 thành viên là Sio, Aran, Saena và Keena. Nhóm nằm dưới sự quản lí của Attrakt, một hãng thu âm độc lập, nhóm chính thức có màn ra mắt vào tháng 11/2022 với EP đầu tay The Fifty. Nhóm được biết đến rộng rãi với công chúng toàn thế giới với bản hit " Cupid " được ra mắt vào tháng 2/2023[1]. Nhờ bản hit này, Fifty Fifty đã trở thành nhóm nhạc nữ lọt vào BXH Billboard[2] và UK Singles Chart[3] nhanh nhất trong lịch sử K-pop khi chỉ mới ra mắt được 4 tháng. Ngoài ra, còn là nhóm nhạc nữ K-pop đầu tiên lọt vào Top 10 của UK Charts [4].',
     },
     {
         id: 9,
@@ -151,7 +157,8 @@ const music = [
         singerName: 'Thái Kiệt Nhã',
         singerImage: require('../Images/26815327_1768633973168696_2615565288466836166_n.jpg'),
         follow: 4843,
-        description: 'Không biết mô tả gì',
+        description:
+            'Thái Kiện Nhã, nữ ca sĩ tài hoa Xinh-ga-po đã làm rung động biết bao trái tim với giọng truyền cảm . Trước khi trở thành ca sĩ hợp đồng với một công ty nào đó, cô từng hát ở các quán ba , nhà hàng ở Xinh-ga-po. Sau khi chính thức ký hợp đồng với Công ty Warner , cô phát hành Album đầu tiên vào năm 1999 mang tên "Nhịp thở", trở thành gương mặt mới trong làng ca nhạc với ca khúc cùng tên Album. Nhưng sau đó , chuyện chia tay với người yêu khiến cô từng một dạo từ bỏ ánh đèn sân khấu . Năm 2003 , cô dày công đưa ra Album tiếng Hoa mang tên " Người không quen" , mỗi bài ca khúc trong Album này đều rung động trái tim người nghe , giành được doanh thu khá cao .',
     },
     {
         id: 10,
@@ -168,7 +175,7 @@ const music = [
         singerName: 'Xuân Đan',
         singerImage: require('../Images/photo-1-16970956331761075803068.webp'),
         follow: 3843,
-        description: 'Không biết mô tả gì',
+        description: 'Chào em! anh là Xuân Đan',
     },
     {
         id: 11,
@@ -183,9 +190,10 @@ const music = [
         vip: false,
         singerId: 2,
         singerName: 'Sơn Tùng M-TP',
-        singerImage: require('../Images/fbf16d7352a3eea6be8cf5d4b217516d.jpg'),
+        singerImage: require('../Images/sontung.jpg'),
         follow: 9080,
-        description: 'Không biết mô tả gì',
+        description:
+            'Nguyễn Thanh Tùng (sinh ngày 5 tháng 7 năm 1994), thường được biết đến với nghệ danh Sơn Tùng M-TP, là một nam ca sĩ kiêm sáng tác nhạc, rapper và diễn viên người Việt Nam.',
     },
     {
         id: 12,
@@ -200,9 +208,10 @@ const music = [
         vip: true,
         singerId: 10,
         singerName: 'Mộng Nhiên / 梦然',
-        singerImage: require('../Images/90e63f505524e9919fbf1a85e01df83e.jpg'),
+        singerImage: require('../Images/mongnhien.jpg'),
         follow: 7080,
-        description: 'Không biết mô tả gì',
+        description:
+            'Mộng Nhiên là ca sỹ tự do, sinh năm 1989, là cô gái đến từ khu tự trị Nội Mông ( Trung Quốc). Lên lớp 11, cô được nhận vào Nhạc viện Thẩm Dương với điểm số xuất sắc. Khi là sinh viên, cô đã nhiều lần sáng tác nhạc cho các ca sĩ và khi tốt nghiệp đại học, cô bước vào làng âm nhạc với tư cách là một ca sĩ thực thụ. Vào năm 2012, cô nổi tiếng khi ra mắt bài hát “Love you Love me”.',
     },
     {
         id: 13,
@@ -219,7 +228,8 @@ const music = [
         singerName: 'Từ Mộng Viên',
         singerImage: require('../Images/13b193b26d3bc7bbc4da0b4f9dac9455.jpg'),
         follow: 5680,
-        description: 'Không biết mô tả gì',
+        description:
+            'Từ Mộng Viên là một ca sĩ, nhạc sĩ người Trung Quốc. Cô sinh ngày 20 tháng 10 năm 1993 tại thành phố Vũ Hán, tỉnh Hồ Bắc, Trung Quốc. Từ Mộng Viên bắt đầu học nhạc từ nhỏ, và có niềm đam mê với âm nhạc từ khi còn rất sớm. Cô đã tham gia nhiều cuộc thi âm nhạc và đạt được nhiều giải thưởng. Năm 2016, cô ra mắt album đầu tiên của mình mang tên "China-X". Album đã nhận được nhiều phản hồi tích cực từ khán giả, và giúp cô trở thành một trong những ca sĩ trẻ nổi tiếng nhất Trung Quốc.',
     },
     {
         id: 14,
@@ -236,7 +246,8 @@ const music = [
         singerName: 'TheFatRat',
         singerImage: require('../Images/1475049690234_600.jpg'),
         follow: 8680,
-        description: 'Không biết mô tả gì',
+        description:
+            'Là nhà sản xuất âm nhạc và DJ người Đức với sở trường là thể loại "glitch-hop", các bản hit nổi bật là "Fly Away", "Unity" và "Monody".',
     },
     {
         id: 15,
@@ -251,9 +262,10 @@ const music = [
         vip: false,
         singerId: 13,
         singerName: 'Andiez',
-        singerImage: require('../Images/75ae579a51cfa505932f59397eac8d69.jpg'),
+        singerImage: require('../Images/andiez.jpg'),
         follow: 4615,
-        description: 'Không biết mô tả gì',
+        description:
+            'Đam mê âm nhạc từ bé, bắt đầu hát và sáng tác từ năm lớp 10. Năm 2017, Andiez sáng tác và trình bày ca khúc "Một Phút", ca khúc trở thành hiện tượng trên mạng xã hội.',
     },
     {
         id: 16,
@@ -268,9 +280,10 @@ const music = [
         vip: false,
         singerId: 14,
         singerName: 'Orange',
-        singerImage: require('../Images/ace9cb5831bbc7e8cc90d8e7432e4b3a.jpg'),
+        singerImage: require('../Images/Orange.jpg'),
         follow: 4915,
-        description: 'Không biết mô tả gì',
+        description:
+            'Là ca sĩ có chất giọng đầy nội lực cùng gu âm nhạc trẻ trung được đông đảo khán giả trẻ yêu thích sau ca khúc debut “Người Lạ Ơi”. Hiện Orange là một trong số nữ ca sĩ có khả năng sáng tác tốt thuộc thế hệ Gen Z nổi bật tại Việt Nam',
     },
     {
         id: 17,
@@ -287,7 +300,8 @@ const music = [
         singerName: 'TheFatRat',
         singerImage: require('../Images/1475049690234_600.jpg'),
         follow: 8680,
-        description: 'Không biết mô tả gì',
+        description:
+            'Là nhà sản xuất âm nhạc và DJ người Đức với sở trường là thể loại "glitch-hop", các bản hit nổi bật là "Fly Away", "Unity" và "Monody".',
     },
     {
         id: 18,
@@ -304,7 +318,8 @@ const music = [
         singerName: 'Từ Mộng Viên',
         singerImage: require('../Images/13b193b26d3bc7bbc4da0b4f9dac9455.jpg'),
         follow: 5680,
-        description: 'Không biết mô tả gì',
+        description:
+            'Từ Mộng Viên là một ca sĩ, nhạc sĩ người Trung Quốc. Cô sinh ngày 20 tháng 10 năm 1993 tại thành phố Vũ Hán, tỉnh Hồ Bắc, Trung Quốc. Từ Mộng Viên bắt đầu học nhạc từ nhỏ, và có niềm đam mê với âm nhạc từ khi còn rất sớm. Cô đã tham gia nhiều cuộc thi âm nhạc và đạt được nhiều giải thưởng. Năm 2016, cô ra mắt album đầu tiên của mình mang tên "China-X". Album đã nhận được nhiều phản hồi tích cực từ khán giả, và giúp cô trở thành một trong những ca sĩ trẻ nổi tiếng nhất Trung Quốc.',
     },
     {
         id: 19,
@@ -319,9 +334,10 @@ const music = [
         vip: false,
         singerId: 15,
         singerName: 'JustaTee',
-        singerImage: require('../Images/33b54115d5b1149f5ac51b4038ef62c7.jpg'),
+        singerImage: require('../Images/justatee.jpg'),
         follow: 5691,
-        description: 'Không biết mô tả gì',
+        description:
+            'Nguyễn Thanh Tuấn (sinh ngày 1 tháng 11 năm 1991), thường được biết đến với nghệ danh JustaTee hay JayTee, là một nam ca sĩ, nhạc sĩ sáng tác ca khúc, rapper kiêm nhà sản xuất thu âm người Việt Nam. Là một trong những ca sĩ nổi bật trong dòng nhạc R&B, anh từng được đề cử một giải Cống hiến, cũng như từng giành giải Zing Music Awards.',
     },
     {
         id: 20,
@@ -341,7 +357,7 @@ const music = [
         description: 'Không biết mô tả gì',
     },
     {
-        id: 21,
+        id: 29,
         musicName: 'Chúng ta của hiện tại',
         image: require('../Images/f0c6b74652e9ed643f3183c7617aaa30.jpg'),
         view: 8327,
@@ -353,9 +369,10 @@ const music = [
         vip: false,
         singerId: 2,
         singerName: 'Sơn Tùng M-TP',
-        singerImage: require('../Images/fbf16d7352a3eea6be8cf5d4b217516d.jpg'),
+        singerImage: require('../Images/sontung.jpg'),
         follow: 9080,
-        description: 'Không biết mô tả gì',
+        description:
+            'Nguyễn Thanh Tùng (sinh ngày 5 tháng 7 năm 1994), thường được biết đến với nghệ danh Sơn Tùng M-TP, là một nam ca sĩ kiêm sáng tác nhạc, rapper và diễn viên người Việt Nam.',
     },
     {
         id: 22,
@@ -370,9 +387,10 @@ const music = [
         vip: false,
         singerId: 3,
         singerName: 'Đen Vâu',
-        singerImage: require('../Images/4d347aacb2be84d868dd6d25bb4aa503.jpg'),
+        singerImage: require('../Images/denvau.jpg'),
         follow: 7880,
-        description: 'Không biết mô tả gì',
+        description:
+            'Nguyễn Đức Cường (sinh ngày 13 tháng 5 năm 1989), thường được biết đến với nghệ danh Đen hay Đen Vâu, là một nam rapper, nhạc sĩ và người dẫn chương trình người Việt Nam. Đen Vâu từng giành được giải Cống hiến và là "một trong số ít nghệ sĩ thành công từ làn sóng underground và âm nhạc indie" của Việt Nam. Anh sở hữu những bài hát đạt hàng triệu lượt xem trên YouTube và là chủ nhân của một số giải thưởng âm nhạc.',
     },
     {
         id: 23,
@@ -389,7 +407,8 @@ const music = [
         singerName: 'Từ Mộng Viên',
         singerImage: require('../Images/13b193b26d3bc7bbc4da0b4f9dac9455.jpg'),
         follow: 5680,
-        description: 'Không biết mô tả gì',
+        description:
+            'Từ Mộng Viên là một ca sĩ, nhạc sĩ người Trung Quốc. Cô sinh ngày 20 tháng 10 năm 1993 tại thành phố Vũ Hán, tỉnh Hồ Bắc, Trung Quốc. Từ Mộng Viên bắt đầu học nhạc từ nhỏ, và có niềm đam mê với âm nhạc từ khi còn rất sớm. Cô đã tham gia nhiều cuộc thi âm nhạc và đạt được nhiều giải thưởng. Năm 2016, cô ra mắt album đầu tiên của mình mang tên "China-X". Album đã nhận được nhiều phản hồi tích cực từ khán giả, và giúp cô trở thành một trong những ca sĩ trẻ nổi tiếng nhất Trung Quốc.',
     },
     {
         id: 24,
@@ -406,7 +425,8 @@ const music = [
         singerName: 'Hoàng Dũng',
         singerImage: require('../Images/Ca-sy-hoang-dung-1024x576.jpg'),
         follow: 4869,
-        description: 'Không biết mô tả gì',
+        description:
+            'Hoàng Dũng là ca nhạc sĩ 9x được yêu thích qua những bản nhạc nhẹ nhàng, du dương và đậm chất "thơ". Với lối tư duy văn minh trong âm nhạc, khả năng sáng tác và giọng hát nội lực, Hoàng Dũng được đánh giá là một nghệ sĩ tiềm năng và đang dần khẳng định phong cách cũng như vị trí của mình trong lớp nghệ sĩ trẻ tại Việt Nam.',
     },
     {
         id: 25,
@@ -423,7 +443,8 @@ const music = [
         singerName: 'Hoàng Dũng',
         singerImage: require('../Images/Ca-sy-hoang-dung-1024x576.jpg'),
         follow: 4869,
-        description: 'Không biết mô tả gì',
+        description:
+            'Hoàng Dũng là ca nhạc sĩ 9x được yêu thích qua những bản nhạc nhẹ nhàng, du dương và đậm chất "thơ". Với lối tư duy văn minh trong âm nhạc, khả năng sáng tác và giọng hát nội lực, Hoàng Dũng được đánh giá là một nghệ sĩ tiềm năng và đang dần khẳng định phong cách cũng như vị trí của mình trong lớp nghệ sĩ trẻ tại Việt Nam.',
     },
     {
         id: 26,
@@ -438,9 +459,10 @@ const music = [
         vip: false,
         singerId: 18,
         singerName: 'Emcee L',
-        singerImage: require('../Images/photo-1-16970956331761075803068.webp'),
+        singerImage: require('../Images/photo-4-16992776047111594909251.webp'),
         follow: 3254,
-        description: 'Không biết mô tả gì',
+        description:
+            'Nổi tiếng trước đó nhờ vào những ca khúc tự mình sáng tác và trình diễn như: Chỉ Là Số Hai, Thuốc Độc, Dưới Hiên Nhà, … Emcee L khiến khán giả nhớ đến mình nhờ vào những ngôn từ sắc bén cộng với sự đa tài của mình khi anh có thể làm rất nhiều công đoạn như sáng tác, trình diễn và thậm chí là hòa âm, phối khí cho tác phẩm của mình ',
     },
     {
         id: 27,
@@ -455,9 +477,46 @@ const music = [
         vip: false,
         singerId: 15,
         singerName: 'JustaTee',
-        singerImage: require('../Images/33b54115d5b1149f5ac51b4038ef62c7.jpg'),
+        singerImage: require('../Images/justatee.jpg'),
         follow: 5691,
-        description: 'Không biết mô tả gì',
+        description:
+            'Nguyễn Thanh Tuấn (sinh ngày 1 tháng 11 năm 1991), thường được biết đến với nghệ danh JustaTee hay JayTee, là một nam ca sĩ, nhạc sĩ sáng tác ca khúc, rapper kiêm nhà sản xuất thu âm người Việt Nam. Là một trong những ca sĩ nổi bật trong dòng nhạc R&B, anh từng được đề cử một giải Cống hiến, cũng như từng giành giải Zing Music Awards.',
+    },
+    {
+        id: 28,
+        musicName: 'Tình nhân ơi',
+        image: require('../Images/1545578861465_640.jpg'),
+        view: 5473,
+        favorite: 4526,
+        link: require('../songs/tinhnhanoi.mp3'),
+        topic: 'Tình yêu',
+        quocGia: 'Việt Nam',
+        theLoai: 'Nhạc trẻ',
+        vip: false,
+        singerId: 14,
+        singerName: 'Orange',
+        singerImage: require('../Images/Orange.jpg'),
+        follow: 4915,
+        description:
+            'Là ca sĩ có chất giọng đầy nội lực cùng gu âm nhạc trẻ trung được đông đảo khán giả trẻ yêu thích sau ca khúc debut “Người Lạ Ơi”. Hiện Orange là một trong số nữ ca sĩ có khả năng sáng tác tốt thuộc thế hệ Gen Z nổi bật tại Việt Nam',
+    },
+    {
+        id: 21,
+        musicName: 'Khuôn mặt đáng thương',
+        image: require('../Images/2e6cc492ff910c1804673bc5a21be89e.jpg'),
+        view: 7646,
+        favorite: 5998,
+        link: require('../songs/khuanmatdangthuong.mp3'),
+        topic: 'Tình yêu',
+        quocGia: 'Việt Nam',
+        theLoai: 'Nhạc trẻ',
+        vip: false,
+        singerId: 2,
+        singerName: 'Sơn Tùng M-TP',
+        singerImage: require('../Images/sontung.jpg'),
+        follow: 9080,
+        description:
+            'Nguyễn Thanh Tùng (sinh ngày 5 tháng 7 năm 1994), thường được biết đến với nghệ danh Sơn Tùng M-TP, là một nam ca sĩ kiêm sáng tác nhạc, rapper và diễn viên người Việt Nam.',
     },
 ];
 export default music;

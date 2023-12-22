@@ -86,8 +86,18 @@ function Header() {
                     listSort.push(singers);
                 }
             }
-            setMusics(songResult);
-            setSingers(listSort);
+            songResult.sort((a, b) => {
+                if (a.id > b.id) return -1;
+                if (a.id < b.id) return 1;
+                return 0;
+            });
+            listSort.sort((a, b) => {
+                if (a.follow > b.follow) return -1;
+                if (a.follow < b.follow) return 1;
+                return 0;
+            });
+            setMusics(songResult.slice(0, 5));
+            setSingers(listSort.slice(0, 5));
         }
     }, [debounce, navigate]);
     useEffect(() => {

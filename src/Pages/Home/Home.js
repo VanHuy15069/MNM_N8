@@ -82,6 +82,11 @@ function Home() {
     }, []);
     useEffect(() => {
         const musicNew = [];
+        music.sort((a, b) => {
+            if (a.id > b.id) return -1;
+            if (a.id < b.id) return 1;
+            return 0;
+        });
         music.forEach((song) => {
             if (musicNew.length < 15) {
                 musicNew.push(song);
@@ -91,6 +96,11 @@ function Home() {
     }, []);
     useEffect(() => {
         const musicNew = [];
+        music.sort((a, b) => {
+            if (a.id > b.id) return -1;
+            if (a.id < b.id) return 1;
+            return 0;
+        });
         music.forEach((song) => {
             if (musicNew.length < 15 && song.quocGia === 'Việt Nam') {
                 musicNew.push(song);
@@ -100,6 +110,11 @@ function Home() {
     }, []);
     useEffect(() => {
         const musicNew = [];
+        music.sort((a, b) => {
+            if (a.id > b.id) return -1;
+            if (a.id < b.id) return 1;
+            return 0;
+        });
         music.forEach((song) => {
             if (musicNew.length < 15 && song.quocGia !== 'Việt Nam') {
                 musicNew.push(song);
@@ -123,6 +138,11 @@ function Home() {
     }, []);
     useEffect(() => {
         const first = [];
+        music.sort((a, b) => {
+            if (a.id > b.id) return -1;
+            if (a.id < b.id) return 1;
+            return 0;
+        });
         music.forEach((song) => {
             if (song.topic === 'Thư giãn' && first.length < 5) {
                 first.push(song);
@@ -132,6 +152,11 @@ function Home() {
     }, []);
     useEffect(() => {
         const first = [];
+        music.sort((a, b) => {
+            if (a.id > b.id) return -1;
+            if (a.id < b.id) return 1;
+            return 0;
+        });
         music.forEach((song) => {
             if (song.topic === 'Tình yêu' && first.length < 5) {
                 first.push(song);
@@ -141,6 +166,11 @@ function Home() {
     }, []);
     useEffect(() => {
         const first = [];
+        music.sort((a, b) => {
+            if (a.id > b.id) return -1;
+            if (a.id < b.id) return 1;
+            return 0;
+        });
         music.forEach((song) => {
             if (song.topic === 'Sôi động' && first.length < 5) {
                 first.push(song);
@@ -150,6 +180,11 @@ function Home() {
     }, []);
     useEffect(() => {
         const first = [];
+        music.sort((a, b) => {
+            if (a.id > b.id) return -1;
+            if (a.id < b.id) return 1;
+            return 0;
+        });
         music.forEach((song) => {
             if (song.topic === 'Giai điệu buồn' && first.length < 5) {
                 first.push(song);

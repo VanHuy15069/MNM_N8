@@ -2,7 +2,6 @@ import classNames from 'classnames/bind';
 import styles from './SearchPage.module.scss';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faCompactDisc, faMusic, faStreetView } from '@fortawesome/free-solid-svg-icons';
 import MusicOfSinger from '~/components/MusicOfSinger/MusicOfSinger';
@@ -14,6 +13,7 @@ function SearchPage() {
     const params = useParams();
     const navigate = useNavigate();
     const [musics, setMusics] = useState([]);
+    const [sortMusic, setSortMusic] = useState([]);
     const [singers, setSingers] = useState([]);
     const [name, setName] = useState('views');
     const [action, setAction] = useState({
@@ -25,6 +25,11 @@ function SearchPage() {
     if (window.innerWidth <= 1231) limit = 4;
     useEffect(() => {
         const songResult = music.filter((song) => song.musicName.includes(params.key));
+        songResult.sort((a, b) => {
+            if (a.id > b.id) return -1;
+            if (a.id < b.id) return 1;
+            return 0;
+        });
         const singerResut = music.filter((singer) => singer.singerName.includes(params.key));
         const listSinger = [];
         singerResut.forEach((item) => {
@@ -40,10 +45,23 @@ function SearchPage() {
                 listSort.push(singers);
             }
         }
-
+        listSort.sort((a, b) => {
+            if (a.follow > b.follow) return -1;
+            if (a.follow < b.follow) return 1;
+            return 0;
+        });
         setMusics(songResult);
         setSingers(listSort);
-    }, [params.key, navigate, name]);
+    }, [params.key, name]);
+    useEffect(() => {
+        const songResult = music.filter((song) => song.musicName.includes(params.key));
+        songResult.sort((a, b) => {
+            if (a.view > b.view) return -1;
+            if (a.view < b.view) return 1;
+            return 0;
+        });
+        setSortMusic(songResult);
+    }, [params.key, name]);
     const handleAll = () => {
         setAction({ all: true, music: false, singer: false });
         setName('views');
@@ -87,11 +105,11 @@ function SearchPage() {
                             </div>
                         ) : (
                             <div className={cx('all-key')}>
-                                {musics.length > 0 && (
+                                {sortMusic.length > 0 && (
                                     <div className={cx('content')}>
                                         <div className={cx('title')}>Nổi bật</div>
                                         <div className={cx('list-music')}>
-                                            {musics.slice(0, 3).map((music, index) => {
+                                            {sortMusic.slice(0, 3).map((music, index) => {
                                                 return (
                                                     <div className={cx('music-item')} key={index}>
                                                         <MusicItemSearch music={music} list={musics} />
